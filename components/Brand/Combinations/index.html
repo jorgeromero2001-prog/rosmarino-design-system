@@ -1,0 +1,97 @@
+<!-- @dsCard group="Brand" name="Combinations" subtitle="Hero · Card · CTA · Nature" viewport='{"width":800}' -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+  body { background: var(--warm-white); padding: 2.5rem; font-family: var(--font-brand); }
+  .meta { font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--stone); margin-bottom: 2rem; }
+  .combos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .combo { border-radius: var(--radius-lg); overflow: hidden; }
+  .combo-body { padding: 1.75rem; }
+  .combo-label { font-size: 0.55rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 1rem; }
+  .combo-title { font-size: 1.25rem; font-weight: 300; letter-spacing: -0.01em; line-height: 1.25; margin-bottom: 0.5rem; }
+  .combo-text  { font-size: 0.8rem; line-height: 1.6; }
+  .combo-btn   { display: inline-block; margin-top: 1rem; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.05em; text-decoration: none; }
+  .combo-spec  { padding: 0.75rem 1.75rem; font-size: 0.55rem; letter-spacing: 0.1em; opacity: 0.6; border-top: 1px solid rgba(255,255,255,0.1); }
+
+  /* Hero — charcoal */
+  .hero-combo .combo-body    { background: var(--charcoal); }
+  .hero-combo .combo-label   { color: var(--cognac-light); }
+  .hero-combo .combo-title   { color: var(--cream); }
+  .hero-combo .combo-text    { color: var(--stone-light); }
+  .hero-combo .combo-btn     { background: var(--cognac); color: var(--cream); }
+  .hero-combo .combo-spec    { background: var(--charcoal); color: var(--stone); border-color: rgba(255,255,255,0.08); }
+
+  /* Card — cream */
+  .card-combo .combo-body    { background: var(--cream); border: 1px solid var(--cream-dark); }
+  .card-combo .combo-label   { color: var(--stone); }
+  .card-combo .combo-title   { color: var(--charcoal); }
+  .card-combo .combo-text    { color: var(--stone); }
+  .card-combo .combo-btn     { background: var(--burgundy); color: var(--cream); }
+  .card-combo .combo-spec    { background: var(--cream-dark); color: var(--stone); border-color: var(--cream-dark); }
+
+  /* CTA — burgundy */
+  .cta-combo .combo-body     { background: var(--burgundy); }
+  .cta-combo .combo-label    { color: rgba(245,240,232,0.6); }
+  .cta-combo .combo-title    { color: var(--cream); }
+  .cta-combo .combo-text     { color: rgba(245,240,232,0.75); }
+  .cta-combo .combo-btn      { background: var(--cream); color: var(--burgundy); }
+  .cta-combo .combo-spec     { background: var(--burgundy-dark); color: rgba(245,240,232,0.5); border-color: rgba(255,255,255,0.08); }
+
+  /* Nature — forest */
+  .nature-combo .combo-body  { background: var(--forest); }
+  .nature-combo .combo-label { color: rgba(245,240,232,0.6); }
+  .nature-combo .combo-title { color: var(--cream); }
+  .nature-combo .combo-text  { color: rgba(245,240,232,0.7); }
+  .nature-combo .combo-btn   { background: var(--cognac-light); color: var(--cream); }
+  .nature-combo .combo-spec  { background: var(--forest-dark); color: rgba(245,240,232,0.5); border-color: rgba(255,255,255,0.08); }
+</style>
+</head>
+<body>
+<div class="meta">Rosmarino — Combinaciones aprobadas</div>
+
+<div class="combos">
+  <div class="combo hero-combo">
+    <div class="combo-body">
+      <div class="combo-label">Hero / Sección destacada</div>
+      <div class="combo-title">Piel que cuenta una historia.</div>
+      <div class="combo-text">Cuatro generaciones trabajando con los mejores materiales.</div>
+      <a class="combo-btn" href="#">Ver colección</a>
+    </div>
+    <div class="combo-spec">charcoal · cream · cognac accent</div>
+  </div>
+
+  <div class="combo card-combo">
+    <div class="combo-body">
+      <div class="combo-label">Card de producto</div>
+      <div class="combo-title">Milano — Cognac + Cream</div>
+      <div class="combo-text">Billetera artesanal de piel de cabrito. Doble tono.</div>
+      <a class="combo-btn" href="#">Comprar</a>
+    </div>
+    <div class="combo-spec">cream · charcoal · burgundy CTA</div>
+  </div>
+
+  <div class="combo cta-combo">
+    <div class="combo-body">
+      <div class="combo-label">Llamada a acción</div>
+      <div class="combo-title">Personaliza tu pieza.</div>
+      <div class="combo-text">Grabado, nombre o fecha. Regala algo que dure toda la vida.</div>
+      <a class="combo-btn" href="#">Personalizar</a>
+    </div>
+    <div class="combo-spec">burgundy · cream · cream CTA</div>
+  </div>
+
+  <div class="combo nature-combo">
+    <div class="combo-body">
+      <div class="combo-label">Sustentabilidad / Origen</div>
+      <div class="combo-title">Raíces mexicanas.</div>
+      <div class="combo-text">Materiales naturales, procesos responsables, tradición viva.</div>
+      <a class="combo-btn" href="#">Nuestra historia</a>
+    </div>
+    <div class="combo-spec">forest · cream · cognac-light CTA</div>
+  </div>
+</div>
+</body>
+</html>

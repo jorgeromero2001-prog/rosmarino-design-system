@@ -1,0 +1,86 @@
+<!-- @dsCard group="Brand" name="Typography" subtitle="TT Hoves Pro — Display · Title · Body · Label" viewport='{"width":800}' -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+  body { background: var(--warm-white); padding: 2.5rem; }
+  .meta { font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--stone); margin-bottom: 2.5rem; font-weight: 400; }
+  .row { display: flex; align-items: baseline; gap: 2rem; padding: 1.25rem 0; border-bottom: 1px solid var(--cream-dark); }
+  .row:first-of-type { border-top: 1px solid var(--cream-dark); }
+  .spec { min-width: 140px; flex-shrink: 0; }
+  .spec-name { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone); }
+  .spec-detail { font-size: 0.55rem; color: var(--stone-light); margin-top: 0.2rem; font-family: monospace; }
+  .sample { flex: 1; color: var(--charcoal); }
+
+  .display { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 300; letter-spacing: -0.02em; line-height: 1.1; }
+  .title   { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 300; letter-spacing: -0.01em; line-height: 1.2; }
+  .subtitle-text { font-size: 1.25rem; font-weight: 400; line-height: 1.3; }
+  .body-text { font-size: 1rem; font-weight: 400; line-height: 1.7; color: var(--charcoal); }
+  .caption { font-size: 0.875rem; font-weight: 300; line-height: 1.5; color: var(--stone); font-style: italic; }
+  .label-upper { font-size: 0.65rem; font-weight: 400; letter-spacing: 0.35em; text-transform: uppercase; color: var(--stone); }
+  .demibold { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="meta">Rosmarino — Tipografía · TT Hoves Pro (Trial)</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">Display</div>
+    <div class="spec-detail">300 · clamp(2.5–4rem) · ls -0.02em</div>
+  </div>
+  <div class="sample display">Piel de cabrito.</div>
+</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">Title</div>
+    <div class="spec-detail">300 · clamp(1.5–2rem) · ls -0.01em</div>
+  </div>
+  <div class="sample title">Artesanía hecha a mano</div>
+</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">Subtitle</div>
+    <div class="spec-detail">400 · 1.25rem</div>
+  </div>
+  <div class="sample subtitle-text">Cuatro generaciones de tradición italiana</div>
+</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">Body</div>
+    <div class="spec-detail">400 · 1rem · lh 1.7</div>
+  </div>
+  <div class="sample body-text">Cada pieza es trabajada a mano con piel de cabrito seleccionada, siguiendo técnicas heredadas de generación en generación en México.</div>
+</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">Caption / Italic</div>
+    <div class="spec-detail">300 italic · 0.875rem</div>
+  </div>
+  <div class="sample caption">Milano · Cognac + Cream · Edición limitada</div>
+</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">DemiBold</div>
+    <div class="spec-detail">600 · precios, énfasis</div>
+  </div>
+  <div class="sample demibold">$2,800 MXN</div>
+</div>
+
+<div class="row">
+  <div class="spec">
+    <div class="spec-name">Label / Eyebrow</div>
+    <div class="spec-detail">400 · 0.65rem · ls 0.35em · uppercase</div>
+  </div>
+  <div class="sample label-upper">Colección 2025</div>
+</div>
+
+</body>
+</html>

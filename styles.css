@@ -1,0 +1,87 @@
+/* Rosmarino Design System — styles.css
+   Fuente de verdad para todos los diseños generados con este brand pack.
+   ⚠️ Las fuentes TT Hoves son Trial — válidas para diseño/preview, no para producción comercial.
+*/
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('fonts/TT-Hoves-Variable.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('fonts/TT-Hoves-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('fonts/TT-Hoves-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('fonts/TT-Hoves-DemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* --- Paleta principal --- */
+  --burgundy:       #6B2D3E;
+  --burgundy-light: #8C3A52;
+  --burgundy-dark:  #4A1E2B;
+
+  --cognac:         #A0673C;
+  --cognac-light:   #C4854E;
+  --cognac-dark:    #7A4E2D;
+
+  --forest:         #2E4A3A;
+  --forest-light:   #3D6350;
+  --forest-dark:    #1E3228;
+
+  --cream:          #F5F0E8;
+  --cream-dark:     #E8E0D4;
+  --warm-white:     #FDFBF7;
+
+  --charcoal:       #1A1A18;
+  --stone:          #8A8680;
+  --stone-light:    #B5B1AA;
+
+  /* --- Colores de acento --- */
+  --blue-steel:     #4A6B7A;
+  --terracotta:     #C05A3C;
+  --pink-blush:     #D4A0A0;
+
+  /* --- Tipografía --- */
+  --font-brand: 'TT Hoves', 'DM Sans', sans-serif;
+
+  /* --- Espaciado base --- */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  6rem;
+
+  /* --- Bordes --- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* Reset mínimo */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-brand);
+  background: var(--warm-white);
+  color: var(--charcoal);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}

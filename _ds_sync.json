@@ -1,0 +1,17 @@
+{
+  "shape": "package",
+  "builtAt": "2026-06-29",
+  "components": [
+    "Brand/ColorPalette",
+    "Brand/Typography",
+    "Brand/Logo",
+    "Brand/Combinations"
+  ],
+  "fonts": [
+    "TT-Hoves-Variable.ttf",
+    "TT-Hoves-LightItalic.ttf",
+    "TT-Hoves-Italic.ttf",
+    "TT-Hoves-DemiBoldItalic.ttf"
+  ],
+  "note": "Manual brand pack build. No projectId yet — pending /design-login support in desktop app."
+}

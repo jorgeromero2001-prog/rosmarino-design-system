@@ -1,0 +1,13 @@
+/* Rosmarino — Color tokens (alias file, all values live in styles.css :root) */
+:root {
+  /* Semantic aliases */
+  --color-bg:          var(--warm-white);
+  --color-surface:     var(--cream);
+  --color-surface-alt: var(--cream-dark);
+  --color-border:      var(--cream-dark);
+  --color-text:        var(--charcoal);
+  --color-text-muted:  var(--stone);
+  --color-accent:      var(--cognac);
+  --color-accent-alt:  var(--burgundy);
+  --color-nature:      var(--forest);
+}

@@ -1,0 +1,79 @@
+<!-- @dsCard group="Brand" name="Logo" subtitle="Isotipo · Wordmark · Variantes de color" viewport='{"width":800}' -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../../styles.css">
+<style>
+  body { background: var(--warm-white); padding: 2.5rem; font-family: var(--font-brand); }
+  .meta { font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--stone); margin-bottom: 2.5rem; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .panel { border-radius: var(--radius-md); padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 180px; gap: 1rem; }
+  .panel img { max-height: 70px; width: auto; object-fit: contain; }
+  .panel-label { font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; }
+
+  .panel-light      { background: var(--warm-white); border: 1px solid var(--cream-dark); }
+  .panel-cream      { background: var(--cream); border: 1px solid var(--cream-dark); }
+  .panel-dark       { background: var(--charcoal); }
+  .panel-burgundy   { background: var(--burgundy); }
+  .panel-cognac     { background: var(--cognac); }
+  .panel-forest     { background: var(--forest); }
+
+  .panel-light .panel-label,
+  .panel-cream .panel-label   { color: var(--stone); }
+  .panel-dark .panel-label,
+  .panel-burgundy .panel-label,
+  .panel-cognac .panel-label,
+  .panel-forest .panel-label  { color: rgba(255,255,255,0.5); }
+
+  .logo-inverted { filter: invert(1); }
+
+  .rule { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--cream-dark); }
+  .rule-title { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--stone); margin-bottom: 0.75rem; }
+  .rule ul { list-style: none; display: flex; flex-direction: column; gap: 0.35rem; }
+  .rule li { font-size: 0.75rem; color: var(--stone); padding-left: 1rem; position: relative; }
+  .rule li::before { content: '—'; position: absolute; left: 0; }
+</style>
+</head>
+<body>
+<div class="meta">Rosmarino — Logo · Variantes</div>
+
+<div class="grid">
+  <div class="panel panel-light">
+    <img src="../../../assets/logo-transparente.png" alt="Isotipo Rosmarino sobre blanco">
+    <div class="panel-label">Isotipo · Fondo claro</div>
+  </div>
+  <div class="panel panel-cream">
+    <img src="../../../assets/wordmark-transparente.png" alt="Wordmark Rosmarino sobre cream">
+    <div class="panel-label">Wordmark · Fondo cream</div>
+  </div>
+  <div class="panel panel-dark">
+    <img src="../../../assets/logo-transparente.png" alt="Isotipo sobre charcoal" class="logo-inverted">
+    <div class="panel-label">Isotipo · Fondo charcoal</div>
+  </div>
+  <div class="panel panel-dark">
+    <img src="../../../assets/wordmark-transparente.png" alt="Wordmark sobre charcoal" class="logo-inverted">
+    <div class="panel-label">Wordmark · Fondo charcoal</div>
+  </div>
+  <div class="panel panel-burgundy">
+    <img src="../../../assets/logo-transparente.png" alt="Isotipo sobre burgundy" class="logo-inverted">
+    <div class="panel-label">Isotipo · Fondo burgundy</div>
+  </div>
+  <div class="panel panel-cognac">
+    <img src="../../../assets/logo-transparente.png" alt="Isotipo sobre cognac" class="logo-inverted">
+    <div class="panel-label">Isotipo · Fondo cognac</div>
+  </div>
+</div>
+
+<div class="rule">
+  <div class="rule-title">Reglas de uso</div>
+  <ul>
+    <li>Logo negro sobre fondos claros (warm-white, cream). No modificar color.</li>
+    <li>Sobre fondos oscuros aplicar <code>filter: invert(1)</code> al logo negro.</li>
+    <li>Espacio mínimo alrededor: igual al alto de la "R" del isotipo.</li>
+    <li>No estirar, rotar, ni agregar sombras al logo.</li>
+    <li>No colocar sobre imágenes con bajo contraste.</li>
+  </ul>
+</div>
+</body>
+</html>
